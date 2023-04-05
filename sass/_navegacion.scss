@@ -1,0 +1,21 @@
+/* NAVEGACIÓN
+**************/
+
+header .navbar {
+    background-color: #FAFAF4;
+    height          : 148px;
+    font-weight     : 700;
+    font-size       : 1.25rem;
+    padding         : 0 80px;
+}
+
+header {
+    .nav-link {
+        color: #41464D;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #F1B9A8;
+    }
+}

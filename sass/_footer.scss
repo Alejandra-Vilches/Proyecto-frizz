@@ -1,0 +1,50 @@
+/* FOOTER
+**************/
+
+footer {
+    background-color: #F1B9A8;
+    height          : 250px;
+    color           : #FAFAF4;
+    padding         : 30px 0;
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+footer {
+    .nav-link {
+        color      : #FAFAF4;
+        font-weight: 400;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #41464D;
+    }
+}
+
+.navbar-expand-lg {
+    flex-wrap: wrap;
+}
+
+.contenedor-redes {}
+
+ul.rrss {
+    list-style-type: none;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+}
+
+ul.rrss li {
+    width: 60px;
+
+
+    img {
+        width : 24px;
+        height: 24px;
+    }
+}

@@ -1,124 +1,6 @@
-* {
-    margin : 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Sulphur Point', sans-serif;
-    color      : #41464D;
-}
-
-/* GENERAL
-**************/
-
-h1 {
-    font-weight    : 700;
-    font-size      : 3.125rem;
-    // 50 px
-    text-decoration: uppercase;
-}
-
-h2 {
-    font-weight: 700;
-    font-size  : 1.875rem;
-    // 30 px
-}
-
-h3 {
-    font-weight: 700;
-    font-size  : 1.25rem;
-    // 20 px
-}
-
-.parrafo-20 {
-    font-weight: 400;
-    font-size  : 1.25rem;
-    // 20 px
-}
-
-.parrafo-16 {
-    font-weight: 400;
-    font-size  : 1rem;
-    // 16 px
-}
-
-
-
-/* NAVEGACIÓN
-**************/
-
-header .navbar {
-    background-color: #FAFAF4;
-    height          : 148px;
-    font-weight     : 700;
-    font-size       : 1.25rem;
-    padding         : 0 80px;
-}
-
-header {
-    .nav-link {
-        color: #41464D;
-    }
-
-    .nav-link:focus,
-    .nav-link:hover {
-        color: #F1B9A8;
-    }
-}
-
-
-
-/* FOOTER
-**************/
-
-footer {
-    background-color: #F1B9A8;
-    height          : 250px;
-    color           : #FAFAF4;
-    padding         : 30px 0;
-
-    .navbar {
-        margin-bottom: 20px;
-    }
-
-}
-
-
-footer {
-    .nav-link {
-        color      : #FAFAF4;
-        font-weight: 400;
-    }
-
-    .nav-link:focus,
-    .nav-link:hover {
-        color: #41464D;
-    }
-}
-
-.navbar-expand-lg {
-    flex-wrap: wrap;
-}
-
-.contenedor-redes {}
-
-ul.rrss {
-    list-style-type: none;
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-}
-
-ul.rrss li {
-    width: 60px;
-
-
-    img {
-        width : 24px;
-        height: 24px;
-    }
-}
-
+@import "general";
+@import "navegacion";
+@import "footer";
 
 /* HOME
 **************/
@@ -136,11 +18,23 @@ main {
     height: 240px;
 }
 
+/*ANIMACION
+************/
 
 .container-h1>h1 {
     text-align: center;
     padding   : 30px 0;
+    cursor    : pointer;
+    transition: all 3s ease;
+
+    &:hover {
+        color: #F1B9A8;
+    }
 }
+
+
+
+
 
 .after-banner-home {
     background-color: #FAFAF4;

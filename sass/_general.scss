@@ -1,0 +1,43 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sulphur Point', sans-serif;
+    color      : #41464D;
+}
+
+/* GENERAL
+**************/
+
+h1 {
+    font-weight    : 700;
+    font-size      : 3.125rem;
+    // 50 px
+    text-decoration: uppercase;
+}
+
+h2 {
+    font-weight: 700;
+    font-size  : 1.875rem;
+    // 30 px
+}
+
+h3 {
+    font-weight: 700;
+    font-size  : 1.25rem;
+    // 20 px
+}
+
+.parrafo-20 {
+    font-weight: 400;
+    font-size  : 1.25rem;
+    // 20 px
+}
+
+.parrafo-16 {
+    font-weight: 400;
+    font-size  : 1rem;
+    // 16 px
+}
