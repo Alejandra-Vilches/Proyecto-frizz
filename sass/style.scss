@@ -13,10 +13,14 @@ main {
     margin-right    : 0;
 }
 
-
-.row .home-img-banner img {
-    height: 240px;
+.row .home-img-banner-lg img {
+    width: 100%;
 }
+
+.row .home-img-banner-sm img {
+    width: 100%;
+}
+
 
 /*ANIMACION
 ************/
@@ -31,10 +35,6 @@ main {
         color: #F1B9A8;
     }
 }
-
-
-
-
 
 .after-banner-home {
     background-color: #FAFAF4;
@@ -62,9 +62,17 @@ section.productos {
     background: linear-gradient(to top, #FAFAF4 0%, #FAFAF4 50%, #D7CEC6 50%, #D7CEC6 100%);
     min-height: 700px;
 
-    h2 {
+    h1 {
         padding: 50px 0;
-        color  : #FAFAF4;
+        color  : #41464D;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        list-style-type: none;
     }
 
     .card-group {
@@ -94,27 +102,31 @@ section.productos {
     }
 }
 
+
 /* CÓMO COMPRAR
 **************/
 
 section.como-comprar {
     background-color: #FAFAF4;
+    overflow-x      : hidden;
 
-
-
-    h2 {
+    h1 {
         padding: 50px 0;
-    }
-
-    .contenedor-comprar {
-        max-width: 1100px;
     }
 
     .texto-comprar {
         background-color: #D7CEC6;
-        color           : #FAFAF4;
-        padding         : 100px 70px;
+        color           : #41464D;
+        padding         : 60px 70px;
+    }
 
+    .container-fluid {
+        padding-left : 0;
+        padding-right: 0;
+    }
+
+    .img-comprar {
+        width: 45em;
     }
 }
 
@@ -125,7 +137,9 @@ section.blog {
     background-color: #FAFAF4;
     padding         : 80px 200px 300px 200px;
 
-
+    h1 {
+        margin-bottom: 40px;
+    }
 }
 
 /* CONTACTO
@@ -134,8 +148,6 @@ section.blog {
 section.formulario {
     background-color: #D7CEC6;
     padding         : 100px 200px 125px;
-
-
 }
 
 section.formulario h1 {
@@ -148,6 +160,13 @@ section.formulario h1 {
 ******************************/
 
 @media (max-width: 479px) {
+
+    /* HOME
+**************/
+
+    .seccion-texto {
+        width: 300px;
+    }
 
     /* PRODUCTOS
 **************/
@@ -182,6 +201,14 @@ section.formulario h1 {
 
             grid-column: 1;
             grid-row   : 3 / 3;
+        }
+    }
+
+    /* CÓMO COMPRAR
+**************/
+    section.como-comprar {
+        .texto-comprar {
+            padding: 30px 30px;
         }
     }
 
@@ -250,8 +277,6 @@ section.formulario h1 {
 **************/
     section.formulario {
         padding: 80px 80px 90px;
-
-
     }
 }
 
@@ -306,8 +331,6 @@ section.formulario h1 {
 **************/
     section.formulario {
         padding: 100px 100px 110px;
-
-
     }
 }
 
